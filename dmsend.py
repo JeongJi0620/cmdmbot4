@@ -12,7 +12,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("봇이 정상적으로 실행되었습니다.")
-    game = discord.Game('★~하는중에 표시될 네임 작성★')
+    game = discord.Game('봇 제작처 : https://discord.gg/F6NUtRJ')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 #/dm {할말}로 전체DM 전송
@@ -25,13 +25,13 @@ async def on_message(message):
             else:
                 try:
                     msg = message.content[4:]
-                    if message.author.id == ★자신의 디스코드ID를 적어주세요(퍼미션):
-                        embed = discord.Embed(colour=0x1DDB16, timestamp=message.created_at, title="★★최상단 제목★★")
-                        embed.add_field(name="★★제목★★", value=msg, inline=True)
-                        embed.set_footer(text=f"discord.gg/★★서버초대코드★★")
+                    if message.author.id == 446639904882163712:
+                        embed = discord.Embed(colour=0x1DDB16, timestamp=message.created_at, title="**ROMA RP __공지__**")
+                        embed.add_field(name="봇 제작처 : https://discord.gg/F6NUtRJ", value=msg, inline=True)
+                        embed.set_footer(text=f"discord.gg/68sntjB")
                         await i.send(embed=embed)
                 except:
                     pass
 
 
-client.run('★★봇토큰★★')
+client.run('NzE5ODc5NDI5NTAwNjk4NjY2.Xt92HA.1ykzJPubXOAKLNopREfr6djKf6w')
